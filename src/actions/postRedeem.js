@@ -1,6 +1,6 @@
 import { headers, URL_POSTREDEEM } from "./constants"
 
-async function getUser(productId) {
+async function postRedeem(productId) {
 
     try {
         const response = await fetch(URL_POSTREDEEM, { method: "POST", headers, body: JSON.stringify({"productId": productId}) })
@@ -11,4 +11,4 @@ async function getUser(productId) {
     }
 }
 
-export default getUser
+export default postRedeem

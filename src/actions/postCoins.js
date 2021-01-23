@@ -1,6 +1,6 @@
 import { headers, URL_POSTCOINS } from "./constants"
 
-async function getUser(coins) {
+async function postCoins(coins) {
 
     try {
         const response = await fetch(URL_POSTCOINS, { method: "POST", headers, body: JSON.stringify({"amount": coins}) })
@@ -11,4 +11,4 @@ async function getUser(coins) {
     }
 }
 
-export default getUser
+export default postCoins

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CustomPagination = (data, itemsPerPage) => {
+const useCustomPagination = (data, itemsPerPage) => {
     const [currentPage, setCurrentPage] = React.useState(1);
     const maxPage = Math.ceil(data.length / itemsPerPage);
 
@@ -10,20 +10,22 @@ const CustomPagination = (data, itemsPerPage) => {
         return data.slice(begin, end)
     }
 
+    const currentArray = data.slice((currentPage-1) * itemsPerPage, currentPage * itemsPerPage)
+
     const next = () => {
-        setCurrentPage((currentPage) => Math.min(currentPage + 1, maxPage))
+        setCurrentPage(currentPage + 1)
     }
 
     const prev = () => {
-        setCurrentPage((currentPage) => Math.max(currentPage - 1, 1));
+        setCurrentPage(currentPage - 1, 1);
     }
 
     const jump = (page) => {
-        const pageNumber = Math.max(1, page);
-        setCurrentPage((currentPage) => Math.min(pageNumber, maxPage));
+        // const pageNumber = Math.max(1, page);
+        setCurrentPage(page);
     }
 
-    return { next, prev, jump, currentData, currentPage, maxPage }
+    return { next, prev, jump, currentData, currentPage, maxPage, currentArray }
 }
 
-export default CustomPagination;
+export default useCustomPagination;

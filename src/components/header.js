@@ -1,21 +1,37 @@
-import React from 'react'
+import React from "react"
 import getUser from "../actions/getUser"
-import AddCoins from  './addCoins'
+import AddCoins from "../components/addCoins"
+// import { userContext } from '../context/userContext';
+import coin from "../assets/coin.svg"
 
-const Header = (props) => {
-  const [users, setUsers] = React.useState([])
-  const [modal, setModal ] = React.useState (false)
+
+function Header() {
+
+    const [modal, setModal] = React.useState(false)
+    
+    const [users, setUsers] = React.useState([])
+
+    // const { users } = React.useContext(userContext)
 
     React.useEffect(() => {
+       
         getUser().then(e => setUsers(e));
-    },[users])
+    },[users]);
 
     return (
         <section className="header">
-            <h6> {users.name} </h6>
-            <button onClick = {() => setModal(true)} > {users.points} </button>
+            {/* {userLoaded ?
+            <h4> Loading... </h4> : */}
+            <div className="userNameInfo">
+                <h6 className="userName"> {users.name} </h6>
+                <button className="button-headerCoins" onClick = {() => setModal(true)} > 
+                    {users.points}
+                    <img src={coin} alt="coin"/>
+                </button>
+            </div>
+            
             {modal ? 
-            <AddCoins/> : null}
+            <AddCoins setModal={setModal}/> : null}
             <div className="container-header">
                 <h6 className="title-header"> Electronics </h6>
             </div>
@@ -23,4 +39,4 @@ const Header = (props) => {
     )
 }
 
-export default Header;
+export default Header
