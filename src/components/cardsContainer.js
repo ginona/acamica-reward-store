@@ -1,11 +1,12 @@
 import React from 'react'
 import Cards from './cards'
 import getProducts from '../actions/getProducts'
+import useCustomPagination from '../customHooks/useCustomPagination'
 
 const CardsContainer = () => {
     const [products, setProducts] = React.useState([]);
     const [sortData, setSortData] = React.useState("recent");
-    
+
     React.useEffect(() => {
       getProducts().then(e => setProducts(e));
     },[]);
@@ -21,6 +22,8 @@ const CardsContainer = () => {
         }
     }
 
+    const { currentArray, next, prev, maxPage, currentPage } = useCustomPagination(renderSwitch(), 16);
+
     return (
         <div>
             <div>
@@ -29,7 +32,11 @@ const CardsContainer = () => {
                 <button onClick={() => setSortData("highPrice")}>Precio Alto</button>
             </div>
             <div className="container-cards">
-            { renderSwitch() }
+            { currentArray }
+            </div>
+            <div>
+                <button onClick={() => prev()} disabled={ currentPage <= 1 }>Prev</button>
+                <button onClick={() => next()} disabled={ currentPage >= maxPage }>Next</button>
             </div>
         </div>
     );

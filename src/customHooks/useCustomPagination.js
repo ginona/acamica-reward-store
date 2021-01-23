@@ -17,7 +17,7 @@ const useCustomPagination = (data, itemsPerPage) => {
     }
 
     const prev = () => {
-        setCurrentPage(currentPage - 1, 1);
+        setCurrentPage(currentPage - 1);
     }
 
     const jump = (page) => {
