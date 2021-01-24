@@ -1,7 +1,7 @@
 import React from "react"
 import coin from "../assets/coin.svg"
 import postCoins from "../actions/postCoins"
-import { THOUSAND, FIVETHOUSAND, SEVENTHOUSAND} from "../actions/constants"
+import { THOUSAND, FIVETHOUSAND, SEVENTHOUSAND} from "../constants/constants"
 
 
 
@@ -30,7 +30,7 @@ function AddCoins(props) {
                 </button>
                 <button className="closeAddCoins" onClick={() => props.setModal(false)}> X </button>
             </section>
-
+            { console.log(message) }
         </div>
 
     )

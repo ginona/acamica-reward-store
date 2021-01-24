@@ -1,4 +1,4 @@
-import { headers, URL_GETPRODUCTS } from "./constants"
+import { headers, URL_GETPRODUCTS } from "../constants/constants"
 
 async function getProducts() {
 

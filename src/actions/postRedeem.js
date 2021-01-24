@@ -1,4 +1,4 @@
-import { headers, URL_POSTREDEEM } from "./constants"
+import { headers, URL_POSTREDEEM } from "../constants/constants"
 
 async function postRedeem(productId) {
 

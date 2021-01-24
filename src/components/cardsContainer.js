@@ -2,6 +2,7 @@ import React from 'react'
 import Cards from './cards'
 import getProducts from '../actions/getProducts'
 import useCustomPagination from '../customHooks/useCustomPagination'
+import { LIMIT } from '../constants/constants'
 
 const CardsContainer = () => {
     const [products, setProducts] = React.useState([]);
@@ -22,7 +23,7 @@ const CardsContainer = () => {
         }
     }
 
-    const { currentArray, next, prev, maxPage, currentPage } = useCustomPagination(renderSwitch(), 16);
+    const { currentArray, next, prev, maxPage, currentPage } = useCustomPagination(renderSwitch(), LIMIT);
 
     return (
         <div>

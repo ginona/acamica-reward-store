@@ -3,7 +3,7 @@ import getUser from '../actions/getUser'
 
 export const userContext = React.createContext();
 
-export const UserContext = (props) => {
+export const UserProvider = (props) => {
     const [users, setUsers] = React.useState([])
     // const [redeem, setRedeem] = React.useState([])
 
@@ -12,7 +12,7 @@ export const UserContext = (props) => {
     },[users])
 
     return (
-        <userContext.Provider value={{users, setUsers}}>
+        <userContext.Provider value={{ users, setUsers }}>
             {props.children}
         </userContext.Provider>
     );

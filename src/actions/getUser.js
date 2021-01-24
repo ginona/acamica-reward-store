@@ -1,4 +1,4 @@
-import { headers, URL_GETUSER } from "./constants"
+import { headers, URL_GETUSER } from "../constants/constants"
 
 async function getUser() {
 

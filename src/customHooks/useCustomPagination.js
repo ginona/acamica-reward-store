@@ -21,7 +21,6 @@ const useCustomPagination = (data, itemsPerPage) => {
     }
 
     const jump = (page) => {
-        // const pageNumber = Math.max(1, page);
         setCurrentPage(page);
     }
 

@@ -1,4 +1,4 @@
-import { headers, URL_POSTCOINS } from "./constants"
+import { headers, URL_POSTCOINS } from "../constants/constants"
 
 async function postCoins(coins) {
 

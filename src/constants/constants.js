@@ -11,3 +11,5 @@ export const URL_POSTREDEEM = "https://coding-challenge-api.aerolab.co/redeem";
 export const THOUSAND = 1000;
 export const FIVETHOUSAND = 5000;
 export const SEVENTHOUSAND = 7500;
+
+export const LIMIT = 16;
