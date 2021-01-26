@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/acamica-reward-store/static/css/main.4027d62c.chunk.css",
-    "main.js": "/acamica-reward-store/static/js/main.814c0b3b.chunk.js",
-    "main.js.map": "/acamica-reward-store/static/js/main.814c0b3b.chunk.js.map",
+    "main.css": "/acamica-reward-store/static/css/main.e43e4e4d.chunk.css",
+    "main.js": "/acamica-reward-store/static/js/main.ed4fb3aa.chunk.js",
+    "main.js.map": "/acamica-reward-store/static/js/main.ed4fb3aa.chunk.js.map",
     "runtime-main.js": "/acamica-reward-store/static/js/runtime-main.9f03c158.js",
     "runtime-main.js.map": "/acamica-reward-store/static/js/runtime-main.9f03c158.js.map",
     "static/css/2.1f208231.chunk.css": "/acamica-reward-store/static/css/2.1f208231.chunk.css",
@@ -12,17 +12,18 @@
     "static/js/3.bfa2f3e0.chunk.js.map": "/acamica-reward-store/static/js/3.bfa2f3e0.chunk.js.map",
     "index.html": "/acamica-reward-store/index.html",
     "static/css/2.1f208231.chunk.css.map": "/acamica-reward-store/static/css/2.1f208231.chunk.css.map",
-    "static/css/main.4027d62c.chunk.css.map": "/acamica-reward-store/static/css/main.4027d62c.chunk.css.map",
+    "static/css/main.e43e4e4d.chunk.css.map": "/acamica-reward-store/static/css/main.e43e4e4d.chunk.css.map",
     "static/js/2.6357db8b.chunk.js.LICENSE.txt": "/acamica-reward-store/static/js/2.6357db8b.chunk.js.LICENSE.txt",
     "static/media/buy-blue.c5c4f01c.svg": "/acamica-reward-store/static/media/buy-blue.c5c4f01c.svg",
     "static/media/coin.1fc21bda.svg": "/acamica-reward-store/static/media/coin.1fc21bda.svg",
+    "static/media/emoji-smile.c20c3e2f.svg": "/acamica-reward-store/static/media/emoji-smile.c20c3e2f.svg",
     "static/media/styles.css": "/acamica-reward-store/static/media/header-x1.b6f067c6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9f03c158.js",
     "static/css/2.1f208231.chunk.css",
     "static/js/2.6357db8b.chunk.js",
-    "static/css/main.4027d62c.chunk.css",
-    "static/js/main.814c0b3b.chunk.js"
+    "static/css/main.e43e4e4d.chunk.css",
+    "static/js/main.ed4fb3aa.chunk.js"
   ]
 }
