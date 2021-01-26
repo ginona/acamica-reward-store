@@ -29,8 +29,8 @@ const CardsContainer = () => {
         <div>
             <div>
                 <button onClick={() => setSortData("recent")}>Most Recent</button>
-                <button onClick={() => setSortData("lowPrice")}>Precio Bajo</button>
-                <button onClick={() => setSortData("highPrice")}>Precio Alto</button>
+                <button onClick={() => setSortData("lowPrice")}>Price: Low to High</button>
+                <button onClick={() => setSortData("highPrice")}>Price: High to Low</button>
             </div>
             <div className="container-cards">
             { currentArray }

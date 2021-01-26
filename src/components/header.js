@@ -7,7 +7,7 @@ import coin from "../assets/coin.svg"
 function Header() {
 
     const [modal, setModal] = React.useState(false)
-    const { users } = React.useContext(userContext)
+    const { users, points } = React.useContext(userContext)
 
     return (
         <section className="header">
@@ -16,7 +16,7 @@ function Header() {
             <div className="userNameInfo">
                 <h6 className="userName"> {users.name} </h6>
                 <button className="button-headerCoins" onClick = {() => setModal(true)} > 
-                    {users.points}
+                    {points}
                     <img src={coin} alt="coin"/>
                 </button>
             </div>
