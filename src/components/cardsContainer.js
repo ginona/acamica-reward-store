@@ -28,18 +28,18 @@ const CardsContainer = () => {
     const { currentArray, next, prev, maxPage, currentPage } = useCustomPagination(renderSwitch(), LIMIT);
 
     return (
-        <section id="cardsContainer" style={{display: history ? "none" : "block"}}>
-            <section>
-                <button onClick={() => setSortData("recent")}>Most Recent</button>
-                <button onClick={() => setSortData("lowPrice")}>Price: Low to High</button>
-                <button onClick={() => setSortData("highPrice")}>Price: High to Low</button>
+        <section style={{display: history ? "none" : "block"}}>
+            <section className="filters">
+                <button className="btnFilter" onClick={() => setSortData("recent")}>Most recent</button>
+                <button className="btnFilter" onClick={() => setSortData("lowPrice")}>Lowest price</button>
+                <button className="btnFilter" onClick={() => setSortData("highPrice")}>Highest price</button>
             </section>
             <section className="container-cards">
             { currentArray }
             </section>
-            <section>
-                <button onClick={() => prev()} disabled={ currentPage <= 1 }>Prev</button>
-                <button onClick={() => next()} disabled={ currentPage >= maxPage }>Next</button>
+            <section className="buttonsPagination">
+                <button className="btnPaginationLeft" onClick={() => prev()} disabled={ currentPage <= 1 }></button>
+                <button className="btnPaginationRight" onClick={() => next()} disabled={ currentPage >= maxPage }></button>
             </section>
         </section>
     );

@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import coin from "../assets/coin.svg"
 import buy from "../assets/buy-blue.svg"
 import emojiSmile from "../assets/emoji-smile.svg"
+import sadEmoji from "../assets/sad-emoji.svg"
 import postRedeem from "../actions/postRedeem.js"
 import { userContext } from '../context/userContext';
 
@@ -39,7 +40,7 @@ function Cards(props) {
             <div className="product-modal"> 
                 <button className="close" id="closeSuccessRedeeem" onClick={() => setSuccessRedeem("")}> X </button>
                 <div className="product-modal-div">
-                    <img className="smileyFace" src={emojiSmile} alt="success" />
+                    <img className="face" src={emojiSmile} alt="success" />
                     <h4 className="successRedeem"> {successRedeem} </h4>
                 </div>
             </div> 
@@ -47,8 +48,8 @@ function Cards(props) {
             <div className="product-modal-failed"> 
                 <button className="close" id="closeSuccessRedeeem" onClick={() => setSuccessRedeem("")}> X </button>
                 <div className="product-modal-div">
-                    <img className="smileyFace" src={emojiSmile} alt="success" />
-                    <h4 className="successRedeem"> {successRedeem} </h4>
+                    <img className="face" src={sadEmoji} alt="success" />
+                    <h4 className="successRedeem"> Error, try again. </h4>
                 </div>
             </div>
             : null }

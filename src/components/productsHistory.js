@@ -11,9 +11,11 @@ const ProductsHistory = () => {
         <div style={{display: history ? "block" : "none"}}>
             <table>
                     <thead>
-                        <th> Product Id </th>
-                        <th> Product Name </th>
-                        <th> Product Cost </th>
+                        <tr>
+                            <th> Product Id </th>
+                            <th> Product Name </th>
+                            <th> Product Cost </th>
+                        </tr>
                     </thead>
                     <tbody>
                         {
@@ -27,7 +29,7 @@ const ProductsHistory = () => {
                         }
                     </tbody>
             </table>
-            <section>
+            <section className="buttonsPagination">
                 <button className="btnPaginationLeft" onClick={() => prev()} disabled={ currentPage <= 1 }></button>
                 <button className="btnPaginationRight" onClick={() => next()} disabled={ currentPage >= maxPage }></button>
             </section>
