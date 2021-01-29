@@ -9,13 +9,12 @@ const ProductsHistory = () => {
 
     return (
         <div style={{display: history ? "block" : "none"}}>
-            <table style={{ 'height': '40%', 'width': '600px', 'display': 'block' }}>
-                <tbody>
-                    <tr>
+            <table>
+                    <thead>
                         <th> Product Id </th>
                         <th> Product Name </th>
-                        <th> Product Cost</th>
-                    </tr>
+                        <th> Product Cost </th>
+                    </thead>
                     <tbody>
                         {
                             currentArray.map((item, i) => 
@@ -27,11 +26,10 @@ const ProductsHistory = () => {
                             )
                         }
                     </tbody>
-                </tbody>
             </table>
             <section>
-                <button onClick={() => prev()} disabled={ currentPage <= 1 }>Prev</button>
-                <button onClick={() => next()} disabled={ currentPage >= maxPage }>Next</button>
+                <button className="btnPaginationLeft" onClick={() => prev()} disabled={ currentPage <= 1 }></button>
+                <button className="btnPaginationRight" onClick={() => next()} disabled={ currentPage >= maxPage }></button>
             </section>
         </div>
     );
