@@ -25,7 +25,6 @@
 .card:hover {
   -webkit-box-shadow: 10px 3px 5px 0px #919191ed;
           box-shadow: 10px 3px 5px 0px #919191ed;
-  /* background-color:#25bbf1; */
   background: -webkit-gradient(linear, left bottom, left top, from(#0ad4fa), color-stop(29%, rgba(254, 254, 254, 0.350578)), to(white));
   background: linear-gradient(0deg, #0ad4fa 0%, rgba(254, 254, 254, 0.350578) 29%, white 100%);
   z-index: 1000;
@@ -412,8 +411,8 @@ table {
 }
 
 th {
-  background: url(https://jackrugile.com/images/misc/noise-diagonal.png), -webkit-gradient(linear, left top, left bottom, from(#12a5d1), to(#085168));
-  background: url(https://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#12a5d1, #085168);
+  background: -webkit-gradient(linear, left top, left bottom, from(#12a5d1), to(#085168));
+  background: linear-gradient(#12a5d1, #085168);
   border-left: 1px solid #1598e4;
   border-right: 1px solid #1598e4;
   border-top: 1px solid #1598e4;
@@ -428,8 +427,8 @@ th {
 }
 
 th:after {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 129, 160, 0)), to(rgba(255, 255, 255, 0.08)));
-  background: linear-gradient(rgba(6, 129, 160, 0), rgba(255, 255, 255, 0.08));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 165, 204, 0)), to(rgba(255, 255, 255, 0.08)));
+  background: linear-gradient(rgba(11, 165, 204, 0), rgba(255, 255, 255, 0.08));
   content: '';
   display: block;
   height: 25%;
@@ -471,14 +470,6 @@ td:last-child {
   border-right: 1px solid #e8e8e8;
   -webkit-box-shadow: inset -1px 0 0 #fff;
           box-shadow: inset -1px 0 0 #fff;
-}
-
-tr {
-  background: url(https://jackrugile.com/images/misc/noise-diagonal.png);
-}
-
-tr:nth-child(odd) td {
-  background: #f1f1f1 url(https://jackrugile.com/images/misc/noise-diagonal.png);
 }
 
 tr:last-of-type td {

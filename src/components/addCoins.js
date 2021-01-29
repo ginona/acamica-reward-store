@@ -7,14 +7,22 @@ import { userContext } from '../context/userContext';
 function AddCoins(props) {
     const [show, setShow] = React.useState(false);
     const { points, setPoints } = React.useContext(userContext);
-
+    const [response, setResponse] = React.useState("")
     React.useEffect(() => {
         if(show) 
-            setTimeout(() => { setShow(false) }, 2000)
+            setTimeout(() => { setShow(false) }, 1000000000)
     },[show])
 
     const handleClick = (number) =>{
-        postCoins(number).then(response => { setPoints(points + number); setShow(true) })
+        postCoins(number).then(response => { 
+            if (typeof response !== "undefined"){
+                setPoints(points + number); 
+                setShow(true);
+                setResponse(response.message)
+            }else{
+                setResponse("Error, try again later.")
+            }
+        })
     }
     
     return (
@@ -23,7 +31,7 @@ function AddCoins(props) {
                 <div>
                     {show && 
                     <div className={ "successEnabled successAddPoints" }> 
-                        <h6 className="success-pointsSuccess"> Success </h6>
+                        <h6 className="success-pointsSuccess"> {response} </h6>
                     </div>
                     }
                 </div>
