@@ -10,17 +10,18 @@ function AddCoins(props) {
     const [response, setResponse] = React.useState("")
     React.useEffect(() => {
         if(show) 
-            setTimeout(() => { setShow(false) }, 1000000000)
+            setTimeout(() => { setShow(false) }, 3000)
     },[show])
 
     const handleClick = (number) =>{
         postCoins(number).then(response => { 
-            if (typeof response !== "undefined"){
+            if (response && response.message === 'Points Updated'){
                 setPoints(points + number); 
                 setShow(true);
                 setResponse(response.message)
             }else{
-                setResponse("Error, try again later.")
+                setShow(true);
+                setResponse("Error, try againt later.")
             }
         })
     }
@@ -30,7 +31,7 @@ function AddCoins(props) {
             <div className="addCoins">
                 <div>
                     {show && 
-                    <div className={ "successEnabled successAddPoints" }> 
+                    <div className={response === 'Points Updated' ? "successEnabled successAddPoints colorAddPointsSuccess" : "successEnabled successAddPoints colorAddPointsError"}> 
                         <h6 className="success-pointsSuccess"> {response} </h6>
                     </div>
                     }

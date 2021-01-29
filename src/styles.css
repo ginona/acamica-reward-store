@@ -158,7 +158,8 @@
       grid-template-columns: 10% 70% 10%;
   -ms-grid-rows: 20% 80%;
       grid-template-rows: 20% 80%;
-      grid-template-areas: "... ... closeSuccessRedeeem" "... product-modal-div ... ";
+      grid-template-areas: "... ... closeSuccessRedeeem"
+ "... product-modal-div ... ";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -180,7 +181,8 @@
       grid-template-columns: 10% 70% 10%;
   -ms-grid-rows: 20% 80%;
       grid-template-rows: 20% 80%;
-      grid-template-areas: "... ... closeSuccessRedeeem" "... product-modal-div ... ";
+      grid-template-areas: "... ... closeSuccessRedeeem"
+ "... product-modal-div ... ";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -298,7 +300,9 @@
       grid-template-columns: auto auto auto 5%;
   -ms-grid-rows: 10% 25% auto;
       grid-template-rows: 10% 25% auto;
-      grid-template-areas: "... ... ... closeAddCoins" "title-addCoins ... ... ..." "buttonAddCoins1 buttonAddCoins2 buttonAddCoins3 ...";
+      grid-template-areas: "... ... ... closeAddCoins"
+ "title-addCoins ... ... ..."
+ "buttonAddCoins1 buttonAddCoins2 buttonAddCoins3 ...";
 }
 
 .button-addCoins {
@@ -384,8 +388,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #0ad4fa;
   border-radius: 8px;
+}
+
+.colorAddPointsSuccess {
+  background-color: #0ad4fa;
+}
+
+.colorAddPointsError {
+  background-color: #df590c;
 }
 
 .successAddPoints:hover {
