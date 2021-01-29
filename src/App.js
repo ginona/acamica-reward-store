@@ -1,6 +1,7 @@
 import Header from './components/header'
 import "./styles.css"
 import CardsContainer from './components/cardsContainer'
+import ProductsHistory from './components/productsHistory'
 import { UserProvider } from './context/userContext'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <UserProvider>
         <Header />
         <CardsContainer />
+        <ProductsHistory />
       </UserProvider>
     </div>
   );

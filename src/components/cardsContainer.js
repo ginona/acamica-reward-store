@@ -3,10 +3,12 @@ import Cards from './cards'
 import getProducts from '../actions/getProducts'
 import useCustomPagination from '../customHooks/useCustomPagination'
 import { LIMIT } from '../constants/constants'
+import { userContext } from '../context/userContext';
 
 const CardsContainer = () => {
     const [products, setProducts] = React.useState([]);
     const [sortData, setSortData] = React.useState("recent");
+    const { history } = React.useContext(userContext)
 
     React.useEffect(() => {
       getProducts().then(e => setProducts(e));
@@ -26,20 +28,20 @@ const CardsContainer = () => {
     const { currentArray, next, prev, maxPage, currentPage } = useCustomPagination(renderSwitch(), LIMIT);
 
     return (
-        <div>
-            <div>
+        <section id="cardsContainer" style={{display: history ? "none" : "block"}}>
+            <section>
                 <button onClick={() => setSortData("recent")}>Most Recent</button>
                 <button onClick={() => setSortData("lowPrice")}>Price: Low to High</button>
                 <button onClick={() => setSortData("highPrice")}>Price: High to Low</button>
-            </div>
-            <div className="container-cards">
+            </section>
+            <section className="container-cards">
             { currentArray }
-            </div>
-            <div>
+            </section>
+            <section>
                 <button onClick={() => prev()} disabled={ currentPage <= 1 }>Prev</button>
                 <button onClick={() => next()} disabled={ currentPage >= maxPage }>Next</button>
-            </div>
-        </div>
+            </section>
+        </section>
     );
 }
 

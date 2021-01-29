@@ -18,8 +18,8 @@ function AddCoins(props) {
     }
     
     return (
-        <div className="modal-screen">
-            <section className="addCoins">
+        <section className="modal-screen">
+            <div className="addCoins">
                 <div>
                     {show && 
                     <div className={ "successEnabled successAddPoints" }> 
@@ -41,8 +41,8 @@ function AddCoins(props) {
                     {MAX}
                 </button>
                 <button className="close" onClick={() => props.setModal(false)}> X </button>
-            </section>
-        </div>
+            </div>
+        </section>
     )
 }
 

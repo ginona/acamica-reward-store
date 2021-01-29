@@ -13,7 +13,6 @@ function Cards(props) {
 
     const handleRedeem = (id, cost) => {
         postRedeem(id).then(response => { setSuccessRedeem(response.message); setPoints(points <= 0 ? 0 : points - cost) });
-        console.log(successRedeem);
     }
     
     return (
