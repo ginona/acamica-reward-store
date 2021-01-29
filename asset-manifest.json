@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/acamica-reward-store/static/css/main.2fc56822.chunk.css",
-    "main.js": "/acamica-reward-store/static/js/main.d1c10ced.chunk.js",
-    "main.js.map": "/acamica-reward-store/static/js/main.d1c10ced.chunk.js.map",
+    "main.css": "/acamica-reward-store/static/css/main.2b9240f9.chunk.css",
+    "main.js": "/acamica-reward-store/static/js/main.cda7aacf.chunk.js",
+    "main.js.map": "/acamica-reward-store/static/js/main.cda7aacf.chunk.js.map",
     "runtime-main.js": "/acamica-reward-store/static/js/runtime-main.9f03c158.js",
     "runtime-main.js.map": "/acamica-reward-store/static/js/runtime-main.9f03c158.js.map",
     "static/css/2.1f208231.chunk.css": "/acamica-reward-store/static/css/2.1f208231.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.bfa2f3e0.chunk.js.map": "/acamica-reward-store/static/js/3.bfa2f3e0.chunk.js.map",
     "index.html": "/acamica-reward-store/index.html",
     "static/css/2.1f208231.chunk.css.map": "/acamica-reward-store/static/css/2.1f208231.chunk.css.map",
-    "static/css/main.2fc56822.chunk.css.map": "/acamica-reward-store/static/css/main.2fc56822.chunk.css.map",
+    "static/css/main.2b9240f9.chunk.css.map": "/acamica-reward-store/static/css/main.2b9240f9.chunk.css.map",
     "static/js/2.6357db8b.chunk.js.LICENSE.txt": "/acamica-reward-store/static/js/2.6357db8b.chunk.js.LICENSE.txt",
     "static/media/buy-blue.c5c4f01c.svg": "/acamica-reward-store/static/media/buy-blue.c5c4f01c.svg",
     "static/media/coin.1fc21bda.svg": "/acamica-reward-store/static/media/coin.1fc21bda.svg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.9f03c158.js",
     "static/css/2.1f208231.chunk.css",
     "static/js/2.6357db8b.chunk.js",
-    "static/css/main.2fc56822.chunk.css",
-    "static/js/main.d1c10ced.chunk.js"
+    "static/css/main.2b9240f9.chunk.css",
+    "static/js/main.cda7aacf.chunk.js"
   ]
 }
