@@ -202,15 +202,21 @@
 }
 
 .historyButtons {
-    line-height: 34px;
-    margin: .5rem;
-    margin-left: 25px;
-    font-weight: 500;
-    font-size: 1.5em;
-    &:hover {
-      border-bottom: 3px solid black;
-      cursor: pointer;
-    }
+  line-height: 34px;
+  margin: .5rem;
+  margin-left: 25px;
+  font-weight: 500;
+  font-size: 1.5em;
+  &:hover {
+    cursor: pointer;
+    text-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+}
+
+h2 {
+  background: linear-gradient(90deg, rgba(22,168,159,1) 0%, rgba(9,19,121,1) 35%, rgba(0,212,255,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
     
 
