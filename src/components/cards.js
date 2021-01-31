@@ -32,7 +32,7 @@ function Cards(props) {
             <div className="card-hovered"> 
                 <div className="buttons-card-hovered"> 
                     <img className="buy" src={buy} alt="buy"/>
-                    <h5 className="card-cost"> { props.cost <= points ? props.cost : "Te faltan " + (props.cost - points)} </h5> 
+                    <h5 className="card-cost"> { props.cost <= points ? props.cost : "You need " + (props.cost - points)} </h5> 
                     <img className="coin" src={coin} alt="coin"/>  
                 </div>
             </div>: null }
