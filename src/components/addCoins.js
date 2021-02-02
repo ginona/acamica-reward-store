@@ -21,7 +21,7 @@ function AddCoins(props) {
                 setResponse(response.message)
             }else{
                 setShow(true);
-                setResponse("Error, try againt later.")
+                setResponse("Error, try again later.")
             }
         })
     }
